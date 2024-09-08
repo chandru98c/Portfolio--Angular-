@@ -24,11 +24,9 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+  "src/favicon.ico",
+  "src/assets"
+],
             "styles": [
               "src/styles.css"
             ],
@@ -44,13 +42,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "5mb",
+                  "maximumError": "2MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "10kB",
+                  "maximumError": "10kB"
                 }
               ],
               "outputHashing": "all"
@@ -86,12 +84,10 @@
               "zone.js/testing"
             ],
             "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+           "assets": [
+  "src/favicon.ico",
+  "src/assets"
+],
             "styles": [
               "src/styles.css"
             ],

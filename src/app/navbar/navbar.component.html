@@ -1,0 +1,23 @@
+<header>
+  <nav>
+    <div class="logo-div" routerLink="">
+      <img class="logo-img" src="assets/logo.png" alt="logo" />
+      <p>sannos</p>
+    </div>
+    <ul class="nav-ul">
+      <li routerLink="">Home</li>
+      <li routerLink="portfolio">Portfolio</li>
+      <li routerLink="message">Contact</li>
+    </ul>
+    <div class="mobile-menu" (click)="toggleMenuIcon()">
+      <i [ngClass]="menuIconClass"></i>
+    </div>
+    <div class="mobile-navigator" [ngClass]="{'mobile-navigator-menu-open': isMenuOpen}">
+      <ul class="mobile-nav-ul">
+        <li routerLink="">Home</li>
+        <li routerLink="portfolio">Portfolio</li>
+        <li routerLink="message">Contact</li>
+      </ul>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,139 @@
+<section>
+  <div class="home-container">
+    <div class="home-container-start">
+      <!-- short intro -->
+      <div
+        [routerLink]="['bio']"
+        routerLinkActive="router-link-active"
+        class="short-intro-container"
+      >
+        <h3>Hi, I'm {{ homeData[0].first_Name }},<br />a Creative Developer</h3>
+        <p>{{ homeData[0].short_Intro }}</p>
+        <div class="social-contact">
+          <div class="social-icon">
+            <a
+              [href]="social_links[0].github"
+              target="_blank"
+              (click)="onSocialIconClick($event)"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+          <div class="social-icon social-icon-overlap">
+            <a
+              [href]="social_links[0].linkedin"
+              target="_blank"
+              (click)="onSocialIconClick($event)"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+          <div class="social-icon social-icon-overlap">
+            <a
+              [href]="social_links[0].instaid"
+              target="_blank"
+              (click)="onSocialIconClick($event)"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="arrow-icon" [routerLink]="['bio']">
+          <img class="arrow-img" src="assets/icon-arrow.png" alt="arrow" />
+        </div>
+      </div>
+      <!-- resume & qualification -->
+      <div class="resume-qualification">
+        <!-- resume -->
+        <a href="assets/santhosh's resume.pdf" target="_blank">
+          <div class="resume-download">
+            <div class="resume-text-box">
+              <div class="resume-text"><p>Resume</p></div>
+            </div>
+            <div class="resume-icon-box">
+              <i class="bx bx-down-arrow-alt"></i>
+            </div></div
+        ></a>
+        <!-- qualification -->
+        <div class="qualification-container" [routerLink]="['qualifications']">
+          <div class="file-pinch"></div>
+          <div class="qualification-file">
+            <div class="qualification-carosel">
+              <div class="qualification-icons-container">
+                <div class="qualification-icons-img .qualification-icons-tech">
+                  <img src="assets/Html.png" alt="" />
+                </div>
+                <div class="qualification-icons-img .qualification-icons-tech">
+                  <img src="assets/React.png" alt="" />
+                </div>
+                <div class="qualification-icons-img .qualification-icons-tech">
+                  <img src="assets/Angular.png" alt="" />
+                </div>
+                <div class="qualification-icons-img .qualification-icons-tech">
+                  <img src="assets/More horizontal.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="qualification-text-container">
+              <div class="book-icon"><i class="bx bx-book-open"></i></div>
+              <div class="qualification-text"><p>Qualification</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero image id card -->
+    <div class="home-container-middle">
+      <div class="tag">
+        <p>ll0l l0l0 ll00 ll00</p>
+        <p>00ll 00ll 0l0l l0ll</p>
+      </div>
+
+      <div class="hero-img-container">
+        <div class="tag-hole"></div>
+        <div class="hero-img"><img src="assets/hero.png" alt="" /></div>
+
+
+
+        <div class="circular-text">
+          <div>
+          <img class="img" src="assets/caller_img.png" alt="">
+          <img class="text" src="assets/curve-text.png" alt="">
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="home-container-end">
+
+      <!-- works -->
+      <div class="works-container" [routerLink]="['portfolio']">
+        <div class="works-file-pinch"></div>
+        <div class="works-file">
+          <div class="works-title">
+            <p>My Works</p>
+          </div>
+          <img src="assets/work.png" alt="work" />
+          <img
+            class="arrow-icon-endflex"
+            src="assets/icon-arrow.png"
+            alt="arrow"
+          />
+        </div>
+      </div>
+
+      <!-- message -->
+      <div class="mailer-container" [routerLink]="['message']">
+        <div class="mailer-img-container">
+          <img src="assets/mailer.png" alt="" />
+        </div>
+        <p>Let's<br />collabrate <span>together</span></p>
+        <img
+          class="arrow-icon-startflex"
+          src="assets/Icon-arrow-green.png"
+          alt="arrow"
+        />
+      </div>
+    </div>
+  </div>
+</section>
