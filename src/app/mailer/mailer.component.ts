@@ -37,9 +37,9 @@ export class MailerComponent implements AfterViewInit{
         sr.reveal('.content-animation', {
           duration: 500,
           opacity: 0,
-delay: 200,
+delay: 400,
           origin: 'left',
-          distance: '300px',
+          distance: '250px',
           scale: 0,
         });
 

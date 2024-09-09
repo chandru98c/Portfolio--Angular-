@@ -290,3 +290,13 @@ margin: 5px;
     width: 280px;
   }
 }
+
+
+/* scroll animation */
+.pop-up-animation,
+.pop-up-animation1,
+.pop-up-animation2,
+.pop-up-animation3,
+.pop-up-animation4,.hero-animation,.bio-text-animation{
+visibility: hidden;
+}

@@ -32,7 +32,7 @@ export class PortfolioComponent implements AfterViewInit {
 
         if (isMobile) {
           // For mobile view, set the same delay for all pop-up animations
-          sr.reveal('.pop-up-animation, .pop-up-animation1, .pop-up-animation2, .pop-up-animation3, .pop-up-animation4', {
+          sr.reveal('.pop-up-animation, .pop-up-animation1, .pop-up-animation2, .pop-up-animation3, .pop-up-animation4, .pop-up-animation5, .pop-up-animation6', {
             ...commonConfig,
             delay: 250,
           });

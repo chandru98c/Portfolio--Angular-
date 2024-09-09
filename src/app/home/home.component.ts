@@ -1,7 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { Home, social_links } from '../shared/app-constants';
 import { RouterLink } from '@angular/router';
-import { delay } from 'rxjs';
 import { CommonModule } from '@angular/common';
 
 declare let window: any;
@@ -11,7 +10,7 @@ declare let window: any;
   standalone: true,
   imports: [RouterLink, CommonModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css'], // Ensure this file includes the initial opacity styles
 })
 export class HomeComponent implements AfterViewInit {
   constructor() {}
@@ -88,7 +87,6 @@ export class HomeComponent implements AfterViewInit {
       });
     }
   }
-
 
   homeData = Home;
   social_links = social_links;

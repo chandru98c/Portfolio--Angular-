@@ -307,3 +307,10 @@ color: red;
     font-size: 1rem;
     text-shadow: 0 0 4px rgb(255, 0, 0,0.249), 0 0 10px rgb(255, 0, 0);
   }
+
+
+  /* scroll animation */
+
+  .head-animation,.content-animation,.mailer-box{
+    visibility: hidden;
+  }
