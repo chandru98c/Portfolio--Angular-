@@ -1,18 +1,21 @@
 <section>
   <div class="detail-qualification-container">
-<!-- info box -->
+    <!-- info box -->
     <div class="img-container-qualification img-box">
       <div class="img-container-box">
         <img src="assets/about.jpg" alt="" />
         <p class="code">ll00 l0l0 0l0l 00ll</p>
         <p class="mail">santhosh98c&#64;gmail.com</p>
         <div class="contact">
-          <a      [href]="social_links[0].linkedin"
-          target="_blank"><div class="icon" ><i class="bx bxl-linkedin"></i></div></a>
-          <a     [href]="social_links[0].instaid"
-          target="_blank"><div class="icon" ><i class="bx bxl-instagram"></i></div></a>
-          <a    [href]="social_links[0].github"
-          target="_blank"><div class="icon"><i class="bx bxl-github"></i></div></a>
+          <a [href]="social_links[0].linkedin" target="_blank"
+            ><div class="icon"><i class="bx bxl-linkedin"></i></div
+          ></a>
+          <a [href]="social_links[0].instaid" target="_blank"
+            ><div class="icon"><i class="bx bxl-instagram"></i></div
+          ></a>
+          <a [href]="social_links[0].github" target="_blank"
+            ><div class="icon"><i class="bx bxl-github"></i></div
+          ></a>
         </div>
         <div class="connect-contact" [routerLink]="['/message']">
           <p>Contact</p>
@@ -20,45 +23,55 @@
       </div>
     </div>
 
-
-
     <div class="qualification-content-container">
-
-
       <!-- intro -->
       <div class="content-container">
         <h4 class="head-animation">Who am i ?</h4>
-        <p class="summary content-animation" [innerHTML]="qualification[0].summary"></p>
+        <p
+          class="summary content-animation"
+          [innerHTML]="qualification[0].summary"
+        ></p>
       </div>
       <div class="content-container">
-        <h4>Capabilities</h4>
+        <h4 class="head-animation">Capabilities</h4>
         <div class="container">
-        <div class="content content-animation" *ngFor="let capability of capabalities">
-          <p class="topic">{{ capability.topic }}</p>
-          <p class="description">{{ capability.description}}</p>
-        </div></div>
+          <div
+            class="content content-animation"
+            *ngFor="let capability of capabalities"
+          >
+            <p class="topic">{{ capability.topic }}</p>
+            <p class="description">{{ capability.description }}</p>
+          </div>
+        </div>
       </div>
-
 
       <!-- education -->
       <div class="content-container">
         <h4 class="head-animation">Education</h4>
         <div class="container">
-        <div class="content content-animation" *ngFor="let course of Education">
-          <p class="title ">{{course.title}}</p>
-          <p class="topic">{{course.course }}</p>
-          <p class="description-2" [innerHTML]="course.description"></p>
-        </div></div>
+          <div
+            class="content content-animation"
+            *ngFor="let course of Education"
+          >
+            <p class="title">{{ course.title }}</p>
+            <p class="topic">{{ course.course }}</p>
+            <p class="description-2" [innerHTML]="course.description"></p>
+          </div>
+        </div>
       </div>
-<!-- certificate -->
+      <!-- certificate -->
       <div class="content-container">
         <h4 class="head-animation">Certifications</h4>
         <div class="container">
-        <div class="content content-animation" *ngFor="let certification of Certificate">
-          <p class="title ">{{certification.title}}</p>
-          <p class="topic">{{ certification.topic }}</p>
-          <p class="description-2">{{ certification.description}}</p>
-        </div></div>
+          <div
+            class="content content-animation"
+            *ngFor="let certification of Certificate"
+          >
+            <p class="title">{{ certification.title }}</p>
+            <p class="topic">{{ certification.topic }}</p>
+            <p class="description-2">{{ certification.description }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

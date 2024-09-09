@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Certificate, Education, qualification, social_links, capabalities} from './../shared/app-constants';
+import {
+  Certificate,
+  Education,
+  qualification,
+  social_links,
+  capabalities,
+} from './../shared/app-constants';
 import { RouterModule } from '@angular/router';
 import { Component, AfterViewInit } from '@angular/core';
 
@@ -8,16 +14,13 @@ import { Component, AfterViewInit } from '@angular/core';
   standalone: true,
   imports: [RouterModule, CommonModule],
   templateUrl: './qualifications.component.html',
-  styleUrl: './qualifications.component.css'
+  styleUrl: './qualifications.component.css',
 })
 export class QualificationsComponent implements AfterViewInit {
-
   constructor() {}
-
 
   ngAfterViewInit(): void {
     if (typeof window !== 'undefined') {
-      // Using dynamic import for ScrollReveal
       import('scrollreveal').then((ScrollReveal) => {
         const sr = ScrollReveal.default();
 
@@ -32,13 +35,12 @@ export class QualificationsComponent implements AfterViewInit {
         sr.reveal('.content-animation', {
           duration: 500,
           opacity: 0,
-delay: 200,
+          delay: 200,
           origin: 'left',
           distance: '400px',
           scale: 0,
-          reset: true
+          reset: true,
         });
-
 
         sr.reveal('.img-box', {
           duration: 500,
@@ -47,19 +49,13 @@ delay: 200,
           distance: '100px',
           scale: 0.6,
         });
-
-
-
       });
     }
   }
 
-
-
-
- Certificate = Certificate;
- Education = Education;
- qualification = qualification;
- social_links = social_links;
- capabalities = capabalities;
+  Certificate = Certificate;
+  Education = Education;
+  qualification = qualification;
+  social_links = social_links;
+  capabalities = capabalities;
 }

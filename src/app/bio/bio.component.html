@@ -12,42 +12,45 @@
     </div>
 
     <div class="bio-content-container">
-<!-- bio text -->
+      <!-- bio text -->
       <div class="bio-text-effect bio-text-animation">
-        <span><img src="assets/star-2.png" alt=""></span><p>BIO</p><span><img src="assets/star-2.png" alt=""></span>
+        <span><img src="assets/star-2.png" alt="" /></span>
+        <p>BIO</p>
+        <span><img src="assets/star-2.png" alt="" /></span>
       </div>
 
-
-<!-- bio content -->
+      <!-- bio content -->
 
       <div class="bio-content pop-up-animation">
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ bio[0].bio }}</p>
       </div>
 
-
       <div class="bottom-content bottom-container">
         <!-- Qualification Section -->
-        <div class="qualification-section pop-up-animation1" [routerLink]="['/qualifications']">
+        <div
+          class="qualification-section pop-up-animation1"
+          [routerLink]="['/qualifications']"
+        >
           <div class="file-handle"></div>
           <div class="qualification-box">
             <div class="qualification-carousel">
               <div class="qualification-icons-wrapper">
-                <p>More About <br>Santhosh</p>
+                <p>More About <br />Santhosh</p>
               </div>
             </div>
             <div class="qualification-text-section">
               <div class="book-icon"><i class="bx bx-book-open"></i></div>
               <div class="qualification-text"><p>Qualification</p></div>
-            </div> <img
-            class="arrow-icon-q"
-            src="assets/icon-arrow.png"
-            alt="arrow"
-          />
+            </div>
+            <img class="arrow-icon-q" src="assets/icon-arrow.png" alt="arrow" />
           </div>
         </div>
 
         <!-- Mailer Section -->
-        <div class="mailer-section pop-up-animation2" [routerLink]="['/message']">
+        <div
+          class="mailer-section pop-up-animation2"
+          [routerLink]="['/message']"
+        >
           <div class="mailer-image-container">
             <img src="assets/mailer.png" alt="Mailer Icon" />
           </div>

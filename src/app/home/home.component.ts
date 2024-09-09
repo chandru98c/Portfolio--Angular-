@@ -10,18 +10,16 @@ declare let window: any;
   standalone: true,
   imports: [RouterLink, CommonModule],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'], // Ensure this file includes the initial opacity styles
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements AfterViewInit {
   constructor() {}
 
   ngAfterViewInit(): void {
     if (typeof window !== 'undefined') {
-      // Using dynamic import for ScrollReveal
       import('scrollreveal').then((ScrollReveal) => {
         const sr = ScrollReveal.default();
 
-        // Common settings for most animations
         const commonConfig = {
           duration: 500,
           opacity: 0,
@@ -30,16 +28,17 @@ export class HomeComponent implements AfterViewInit {
           scale: 0.2,
         };
 
-        const isMobile = window.innerWidth < 768; // Define mobile screen width (768px or less)
+        const isMobile = window.innerWidth < 768;
 
         if (isMobile) {
-          // For mobile view, set the same delay for all pop-up animations
-          sr.reveal('.pop-up-animation, .pop-up-animation1, .pop-up-animation2, .pop-up-animation3, .pop-up-animation4', {
-            ...commonConfig,
-            delay: 350,
-          });
+          sr.reveal(
+            '.pop-up-animation, .pop-up-animation1, .pop-up-animation2, .pop-up-animation3, .pop-up-animation4',
+            {
+              ...commonConfig,
+              delay: 350,
+            }
+          );
         } else {
-          // For larger screens, apply different delays
           sr.reveal('.pop-up-animation', { ...commonConfig, delay: 400 });
           sr.reveal('.pop-up-animation1', { ...commonConfig, delay: 450 });
           sr.reveal('.pop-up-animation2', { ...commonConfig, delay: 500 });
@@ -47,7 +46,6 @@ export class HomeComponent implements AfterViewInit {
           sr.reveal('.pop-up-animation4', { ...commonConfig, delay: 600 });
         }
 
-        // Tag and Hero animations (same across all screens)
         sr.reveal('.tag-animation', {
           duration: 500,
           delay: 350,

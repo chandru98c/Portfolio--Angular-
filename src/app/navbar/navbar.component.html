@@ -12,7 +12,10 @@
     <div class="mobile-menu" (click)="toggleMenuIcon()">
       <i [ngClass]="menuIconClass"></i>
     </div>
-    <div class="mobile-navigator" [ngClass]="{'mobile-navigator-menu-open': isMenuOpen}">
+    <div
+      class="mobile-navigator"
+      [ngClass]="{ 'mobile-navigator-menu-open': isMenuOpen }"
+    >
       <ul class="mobile-nav-ul">
         <li routerLink="">Home</li>
         <li routerLink="portfolio">Portfolio</li>

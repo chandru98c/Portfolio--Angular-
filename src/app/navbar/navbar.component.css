@@ -21,7 +21,6 @@ nav img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
 }
 .logo-div p {
   font-weight: 400;
@@ -74,11 +73,6 @@ nav img {
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
 
 @media (max-width: 570px) {
   nav img {

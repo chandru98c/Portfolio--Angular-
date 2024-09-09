@@ -25,10 +25,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 }
 .grid-template {
-
   transition: all 0.3s;
-
-
 }
 .grid-template-box {
   display: flex;
@@ -40,9 +37,8 @@ section {
 .file-handle-project {
   height: 30px;
   width: 35%;
-margin-bottom: -10px;
+  margin-bottom: -10px;
   border-radius: 25px 25px 0 0;
-
 }
 .file-projects {
   width: 100%;
@@ -51,11 +47,9 @@ margin-bottom: -10px;
   border-bottom: solid 1px rgb(120, 120, 120);
   position: relative;
   cursor: pointer;
-
 }
 .grid-template:hover {
   scale: 1.03;
-
 }
 .file-projects img {
   width: 100%;
@@ -120,7 +114,6 @@ margin-bottom: -10px;
   font-weight: 300;
 }
 
-
 .file-handle1 {
   background: #f94b60;
 }
@@ -129,53 +122,55 @@ margin-bottom: -10px;
   background: linear-gradient(to bottom, #f94b60, #0d0d0d);
 }
 .file-handle2 {
-  background: #B6F41B;
+  background: #b6f41b;
 }
 
 .file2 {
-  background: linear-gradient(to bottom, #B6F41B, #0d0d0d);
+  background: linear-gradient(to bottom, #b6f41b, #0d0d0d);
 }
 .file-handle3 {
-  background: #1A51F4;
+  background: #1a51f4;
 }
 
 .file3 {
-  background: linear-gradient(to bottom, #1A51F4, #0d0d0d);
+  background: linear-gradient(to bottom, #1a51f4, #0d0d0d);
 }
 .file-handle4 {
-  background: #FFC530;
+  background: #ffc530;
 }
 
 .file4 {
-  background: linear-gradient(to bottom, #FFC530, #0d0d0d);
+  background: linear-gradient(to bottom, #ffc530, #0d0d0d);
 }
 .file-handle5 {
-  background: #04CA96;
+  background: #04ca96;
 }
 
 .file5 {
-  background: linear-gradient(to bottom, #04CA96, #0d0d0d);
+  background: linear-gradient(to bottom, #04ca96, #0d0d0d);
 }
 .file-handle6 {
-  background: #936BFF;
+  background: #936bff;
 }
 
 .file6 {
-  background: linear-gradient(to bottom, #936BFF, #0d0d0d);
+  background: linear-gradient(to bottom, #936bff, #0d0d0d);
 }
-
-
 
 @media (max-width: 1170px) {
-.grid-container{
-  grid-template-columns: repeat(1 , 1fr);
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-
-}
-
 
 /* scroll reveal */
-.pop-up-animation, .pop-up-animation1, .pop-up-animation2, .pop-up-animation3, .pop-up-animation4
-, .pop-up-animation5, .pop-up-animation6,.portfolio-text-animation{
+.pop-up-animation,
+.pop-up-animation1,
+.pop-up-animation2,
+.pop-up-animation3,
+.pop-up-animation4,
+.pop-up-animation5,
+.pop-up-animation6,
+.portfolio-text-animation {
   visibility: hidden;
 }

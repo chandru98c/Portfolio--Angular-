@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   standalone: true,
   imports: [RouterLink, CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
   menuIconClass = 'bx bx-menu-alt-right';
@@ -17,8 +17,7 @@ export class NavbarComponent implements OnInit {
   constructor(private router: Router, private renderer: Renderer2) {}
 
   ngOnInit() {
-    // Subscribe to route changes
-    this.router.events.subscribe(event => {
+    this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.resetMenu();
       }
@@ -30,7 +29,12 @@ export class NavbarComponent implements OnInit {
       const menuElement = document.querySelector('.mobile-navigator');
       const iconElement = document.querySelector('.mobile-menu i');
 
-      if (menuElement && iconElement && !menuElement.contains(target) && !iconElement.contains(target)) {
+      if (
+        menuElement &&
+        iconElement &&
+        !menuElement.contains(target) &&
+        !iconElement.contains(target)
+      ) {
         this.resetMenu();
       }
     });

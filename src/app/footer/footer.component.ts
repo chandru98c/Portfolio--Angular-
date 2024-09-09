@@ -7,7 +7,7 @@ import { social_links } from '../shared/app-constants';
   standalone: true,
   imports: [RouterLink],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrl: './footer.component.css',
 })
 export class FooterComponent {
   social_links = social_links;
