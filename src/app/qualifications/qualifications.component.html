@@ -1,7 +1,7 @@
 <section>
   <div class="detail-qualification-container">
-
-    <div class="img-container-qualification">
+<!-- info box -->
+    <div class="img-container-qualification img-box">
       <div class="img-container-box">
         <img src="assets/about.jpg" alt="" />
         <p class="code">ll00 l0l0 0l0l 00ll</p>
@@ -19,33 +19,42 @@
         </div>
       </div>
     </div>
+
+
+
     <div class="qualification-content-container">
+
+
+      <!-- intro -->
       <div class="content-container">
-        <h4>Who am i ?</h4>
-        <p class="summary" [innerHTML]="qualification[0].summary"></p>
+        <h4 class="head-animation">Who am i ?</h4>
+        <p class="summary content-animation" [innerHTML]="qualification[0].summary"></p>
       </div>
       <div class="content-container">
         <h4>Capabilities</h4>
         <div class="container">
-        <div class="content" *ngFor="let capability of capabalities">
+        <div class="content content-animation" *ngFor="let capability of capabalities">
           <p class="topic">{{ capability.topic }}</p>
           <p class="description">{{ capability.description}}</p>
         </div></div>
       </div>
+
+
+      <!-- education -->
       <div class="content-container">
-        <h4>Education</h4>
+        <h4 class="head-animation">Education</h4>
         <div class="container">
-        <div class="content" *ngFor="let course of Education">
+        <div class="content content-animation" *ngFor="let course of Education">
           <p class="title ">{{course.title}}</p>
           <p class="topic">{{course.course }}</p>
           <p class="description-2" [innerHTML]="course.description"></p>
         </div></div>
       </div>
-
+<!-- certificate -->
       <div class="content-container">
-        <h4>Certifications</h4>
+        <h4 class="head-animation">Certifications</h4>
         <div class="container">
-        <div class="content" *ngFor="let certification of Certificate">
+        <div class="content content-animation" *ngFor="let certification of Certificate">
           <p class="title ">{{certification.title}}</p>
           <p class="topic">{{ certification.topic }}</p>
           <p class="description-2">{{ certification.description}}</p>

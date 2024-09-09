@@ -5,7 +5,7 @@
       <div
         [routerLink]="['bio']"
         routerLinkActive="router-link-active"
-        class="short-intro-container"
+        class="short-intro-container pop-up-animation"
       >
         <h3>Hi, I'm {{ homeData[0].first_Name }},<br />a Creative Developer</h3>
         <p>{{ homeData[0].short_Intro }}</p>
@@ -43,7 +43,7 @@
       <div class="resume-qualification">
         <!-- resume -->
         <a href="assets/santhosh's resume.pdf" target="_blank">
-          <div class="resume-download">
+          <div class="resume-download pop-up-animation2">
             <div class="resume-text-box">
               <div class="resume-text"><p>Resume</p></div>
             </div>
@@ -52,7 +52,7 @@
             </div></div
         ></a>
         <!-- qualification -->
-        <div class="qualification-container" [routerLink]="['qualifications']">
+        <div class="qualification-container pop-up-animation3" [routerLink]="['qualifications']">
           <div class="file-pinch"></div>
           <div class="qualification-file">
             <div class="qualification-carosel">
@@ -82,21 +82,21 @@
 
     <!-- hero image id card -->
     <div class="home-container-middle">
-      <div class="tag">
+      <div class="tag tag-animation">
         <p>ll0l l0l0 ll00 ll00</p>
         <p>00ll 00ll 0l0l l0ll</p>
       </div>
 
-      <div class="hero-img-container">
-        <div class="tag-hole"></div>
+      <div class="hero-img-container hero-animation">
+        <div class="tag-hole tag-hole-animation"></div>
         <div class="hero-img"><img src="assets/hero.png" alt="" /></div>
 
 
 
-        <div class="circular-text">
+        <div class="circular-text" >
           <div>
-          <img class="img" src="assets/caller_img.png" alt="">
-          <img class="text" src="assets/curve-text.png" alt="">
+          <img class="img circular-text-img" src="assets/caller_img.png" alt="">
+          <img class="text circular-text-text" src="assets/curve-text.png" alt="">
         </div>
         </div>
 
@@ -107,7 +107,7 @@
     <div class="home-container-end">
 
       <!-- works -->
-      <div class="works-container" [routerLink]="['portfolio']">
+      <div class="works-container pop-up-animation1" [routerLink]="['portfolio']">
         <div class="works-file-pinch"></div>
         <div class="works-file">
           <div class="works-title">
@@ -123,7 +123,7 @@
       </div>
 
       <!-- message -->
-      <div class="mailer-container" [routerLink]="['message']">
+      <div class="mailer-container pop-up-animation4" [routerLink]="['message']">
         <div class="mailer-img-container">
           <img src="assets/mailer.png" alt="" />
         </div>

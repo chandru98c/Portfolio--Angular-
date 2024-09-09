@@ -25,11 +25,15 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 }
 .grid-template {
-  transition: all 0.3s ease;
+
+  transition: all 0.3s;
+
+
+}
+.grid-template-box {
   display: flex;
   flex-direction: column;
   align-items: end;
-
 }
 
 /*  */
@@ -51,6 +55,7 @@ margin-bottom: -10px;
 }
 .grid-template:hover {
   scale: 1.03;
+
 }
 .file-projects img {
   width: 100%;

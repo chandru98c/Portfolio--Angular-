@@ -54,7 +54,7 @@ nav img {
   font-size: 17px;
   cursor: pointer;
   border-radius: 20px;
-  z-index: 99;
+  z-index: 999999;
   position: absolute;
   border: solid 1px rgba(255, 255, 255, 0.169);
 }

@@ -1,32 +1,35 @@
 <section>
-  <div class="bio-text-effect">
+  <div class="bio-text-effect portfolio-text-animation">
     <span><img src="assets/star-2.png" alt="" /></span>
     <p>PORTFOLIO</p>
     <span><img src="assets/star-2.png" alt="" /></span>
   </div>
 
   <div class="grid-container">
+    <div
+      class="grid-template"
 
-
-
-    <div class="grid-template" *ngFor="let project of projects; let i = index">
-      <div class="file-handle-project" [ngClass]="'file-handle' + (i + 1)"></div>
-      <a [href]="project.link" target="_blank"><div [ngClass]="'file-projects file' + (i + 1)">
-        <div class="p-details">
-          <h6>{{project.title}}</h6>
-          <p class="stack">Technologies</p>
-          <p class="tech-stack">{{project.tech_stack}}</p>
-        </div>
-        <div class="p-details-hover">
-          <h6>{{project.title2}}</h6>
-          <p class="stack">{{project.t2}}</p>
-          <p class="tech-stack">{{project.b2}}</p>
-        </div>
-        <img [src]="project.img" alt="" />
-      </div></a>
+      *ngFor="let project of projects; let i = index"
+    >
+    <div   [ngClass]="'pop-up-animation' + (i + 1)" class="grid-template-box" >
+      <div
+        class="file-handle-project"
+        [ngClass]="'file-handle' + (i + 1)"
+      ></div>
+      <a [href]="project.link" target="_blank"
+        ><div [ngClass]="'file-projects file' + (i + 1)">
+          <div class="p-details">
+            <h6>{{ project.title }}</h6>
+            <p class="stack">Technologies</p>
+            <p class="tech-stack">{{ project.tech_stack }}</p>
+          </div>
+          <div class="p-details-hover">
+            <h6>{{ project.title2 }}</h6>
+            <p class="stack">{{ project.t2 }}</p>
+            <p class="tech-stack">{{ project.b2 }}</p>
+          </div>
+          <img [src]="project.img" alt="" /></div
+      ></a></div>
     </div>
-
-
-
   </div>
 </section>

@@ -16,6 +16,35 @@ background: #000000;
 
 }
 
+.loading-spinner{
+  background: #00313400;
+  height: 100vh;
+  width: 100%;
+
+
+}
+.loader-img img{
+width: 250px;
+animation: loaderanimation 2s infinite ;
+}
+.loading-spinner .loader-img{
+width: 100%; display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+
+@keyframes loaderanimation {
+0%{
+rotate: 0deg;
+
+}
+100%{
+  rotate: 360deg;
+}
+}
+
 @media (min-width: 1380px) {
   header,section,footer {
     max-width: 1380px;

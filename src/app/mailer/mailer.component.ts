@@ -1,8 +1,9 @@
 import { social_links } from './../shared/app-constants';
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-mailer',
@@ -11,11 +12,63 @@ import { CommonModule } from '@angular/common';
   templateUrl: './mailer.component.html',
   styleUrl: './mailer.component.css'
 })
-export class MailerComponent {
+export class MailerComponent implements AfterViewInit{
   success: boolean = false;
   error: boolean = false;
 
   constructor(private http: HttpClient) {}
+
+
+
+  ngAfterViewInit(): void {
+    if (typeof window !== 'undefined') {
+      // Using dynamic import for ScrollReveal
+      import('scrollreveal').then((ScrollReveal) => {
+        const sr = ScrollReveal.default();
+
+        sr.reveal('.head-animation', {
+          duration: 500,
+          opacity: 0,
+
+          origin: 'bottom',
+          distance: '100px',
+        });
+
+        sr.reveal('.content-animation', {
+          duration: 500,
+          opacity: 0,
+delay: 200,
+          origin: 'left',
+          distance: '300px',
+          scale: 0,
+        });
+
+
+        sr.reveal('.mailer-box', {
+          duration: 900,
+          opacity: 0,
+          origin: 'bottom',
+          distance: '100px',
+          scale: 0.6,
+        });
+
+
+
+      });
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   formSubmit(form: NgForm) {
     if (form.invalid) {
