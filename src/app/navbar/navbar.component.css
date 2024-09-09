@@ -46,7 +46,7 @@ nav img {
   background: linear-gradient(to right bottom, #15171aa7, #15171a0e);
   backdrop-filter: blur(2px) brightness(40%);
   -webkit-backdrop-filter: blur(2px) brightness(40%);
-  display: none;
+  display: block;
   top: 58px;
   font-weight: 400;
   font-style: normal;

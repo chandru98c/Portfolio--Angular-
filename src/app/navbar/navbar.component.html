@@ -9,17 +9,14 @@
       <li routerLink="portfolio">Portfolio</li>
       <li routerLink="message">Contact</li>
     </ul>
-    <div class="mobile-menu" (click)="toggleMenuIcon()">
+    <div class="mobile-menu" (click)="toggleMenu()">
       <i [ngClass]="menuIconClass"></i>
     </div>
-    <div
-      class="mobile-navigator"
-      [ngClass]="{ 'mobile-navigator-menu-open': isMenuOpen }"
-    >
+    <div *ngIf="isMenuOpen" class="mobile-navigator">
       <ul class="mobile-nav-ul">
-        <li routerLink="">Home</li>
-        <li routerLink="portfolio">Portfolio</li>
-        <li routerLink="message">Contact</li>
+        <li routerLink="" class="mobile-li" (click)="closeMenu()">Home</li>
+        <li routerLink="portfolio" class="mobile-li" (click)="closeMenu()">Portfolio</li>
+        <li routerLink="message" class="mobile-li" (click)="closeMenu()">Contact</li>
       </ul>
     </div>
   </nav>
